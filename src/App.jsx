@@ -6,9 +6,13 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
+
   return (
     <>
+      <div id="persistent-navbar">Wh</div>
       <div>Hello! Welcome to the cleanly frontend!</div>
+      <button onClick={(e) => { }}>Test button!</button>
     </>
   )
   /*
