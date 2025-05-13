@@ -44,9 +44,17 @@
   color: #888;
 }
 
-
-#persistent-navbar {
+#persistent-navbar-top {
   width: 100vw;
+  height: 41px;
   background-color: #FFFBFF;
   color: #0118D8;
+}
+
+#persistent-navbar-bottom {
+  width: 100vw;
+  background-color: #0118D8;
+  color: #FFFBFF;
+  height: 62px;
+  margin-bottom: 15px;
 }

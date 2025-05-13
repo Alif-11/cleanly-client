@@ -10,9 +10,25 @@ function App() {
 
   return (
     <>
-      <div id="persistent-navbar">Wh</div>
+      <div id="persistent-navbar-top">Wh</div>
+      <div id="persistent-navbar-bottom">Wh</div>
       <div>Hello! Welcome to the cleanly frontend!</div>
-      <button onClick={(e) => { }}>Test button!</button>
+      <button onClick={async () => {
+        /* originally, you had no method: "POST" here.
+        that meant that your fetch call was defaulting the method to "GET".
+        since the /name endpoint handles POST requests, the server was unable
+        the find the /name endpoint that handled GET request, because it doesn't exist
+        */
+
+        /*
+        You can explicitly set the method to GET, and obtain the same 404 error 
+        as before.
+        */
+        const res = await fetch(`${backendURL}/name`, {
+          method: "POST",
+        })
+        console.log("You clicked the 'test button' on the Cleanly HomePage.");
+      }}>Test button!</button>
     </>
   )
   /*
