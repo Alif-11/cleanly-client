@@ -1,7 +1,5 @@
 #root {
   max-width: 100vw;
-  /*margin: 0 auto;
-  padding: 2rem;*/
   text-align: center;
   margin-right: 0px;
 }
@@ -45,17 +43,44 @@
   color: #888;
 }
 
+/* CSS to make the top most navbar white. */
 #persistent-navbar-top {
   width: 100vw;
-  height: 41px;
+  height: 61px;
   background-color: #FFFBFF;
   color: #0118D8;
 }
 
+/* CSS to make the navbar -  below the top, white navbar - blue . */
 #persistent-navbar-bottom {
   width: 100vw;
   background-color: #0118D8;
   color: #FFFBFF;
   height: 62px;
   margin-bottom: 15px;
+}
+
+/* CSS to make the bottom banner a blue trapezoid. */
+#bottom-banner-triangle {
+  width: 100px;
+  height: 0;
+  background-color: #0118D8;
+  color: #FFFBFF;
+  position: fixed;
+  /* To position the triangle, it may be a good idea to get the rendered
+   * rectangle's height, and use it as the value to bottom.
+   */
+  bottom: 100px;
+  border-bottom: 200px solid transparent;
+  border-left: 100vw solid;
+  border-right: 25px solid transparent;
+}
+
+#bottom-banner-rectangle {
+  width: 100vw;
+  height: 100px;
+  background-color: #0118D8;
+  color: #FFFBFF;
+  position: fixed;
+  bottom: 0;
 }

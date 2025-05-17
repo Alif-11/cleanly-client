@@ -10,9 +10,21 @@ function App() {
 
   return (
     <>
+      {/* persistent-navbar-top is the white navbar at the top of the screen. */}
       <div id="persistent-navbar-top">Wh</div>
+      {/* persistent-navbar-bottom is the blue navbar right below persistent-navbar-top. 
+          It contains the buttons for PATRON and RUNNER on the left, and ABOUT US on the right. */}
       <div id="persistent-navbar-bottom">Wh</div>
       <div>Hello! Welcome to the cleanly frontend!</div>
+
+      {/* The space here, between the 'Hello! Welcome to...' 
+        * and the '<div id="bottom-banner"...'
+        * is what React will change and shift. Everything else 
+        * should be relatively permanent.
+        */}
+
+
+      {/* This is a test method to handle making calls to your API. Postman also is helpful for API testing. */}
       <button onClick={async () => {
         /* originally, you had no method: "POST" here.
         that meant that your fetch call was defaulting the method to "GET".
@@ -29,33 +41,10 @@ function App() {
         })
         console.log("You clicked the 'test button' on the Cleanly HomePage.");
       }}>Test button!</button>
+      <div id="bottom-banner-triangle"></div>
+      <div id="bottom-banner-rectangle">Cleanly & Cleanly &copy; 2025</div>
     </>
   )
-  /*
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )*/
 }
 
 export default App
