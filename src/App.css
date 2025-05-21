@@ -58,6 +58,31 @@
   color: #FFFBFF;
   height: 62px;
   margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CSS to handle the positioning of the container holding 
+   all elements of the left side of the blue navbar. */
+#blue-navbar-left {
+  margin-left: 350px;
+  font-weight: 650;
+}
+
+/* CSS to handle the positioning of the container holding 
+   all elements of the right side of the blue navbar. */
+#blue-navbar-right {
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 650;
+}
+
+/* CSS to handle the styling of the individual items*/
+.blue-navbar-right-subitem {
+  margin-right: 100px;
+
 }
 
 /* CSS to make the bottom banner a blue trapezoid. */
