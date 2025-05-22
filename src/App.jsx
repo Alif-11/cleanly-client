@@ -11,17 +11,26 @@ function App() {
   return (
     <>
       {/* persistent-navbar-top is the white navbar at the top of the screen. */}
-      <div id="persistent-navbar-top">Cleanly - For All Your Laundry Needs</div>
+      <div id="persistent-navbar-top">Cleanly</div>
       {/* persistent-navbar-bottom is the blue navbar right below persistent-navbar-top. 
           It contains the buttons for PATRON and RUNNER on the left, and ABOUT US on the right. */}
       <div id="persistent-navbar-bottom">
         <div id="blue-navbar-left">CLEANLY LOGO</div>
         <div id="blue-navbar-right">
-          <div className="blue-navbar-right-subitem">SIGN UP</div>
-          <div className="blue-navbar-right-subitem">LOG IN</div>
-          <div className="blue-navbar-right-subitem">ABOUT US</div>
+          <div onClick={
+            () => {
+              console.log("You clicked the SIGN UP Button in the Blue Navbar");
+            }
+          }
+
+            className="blue-navbar-right-subitem">
+            {/* Need to add hover animations so it's clear the Navbar items are clickable. */}
+            SIGN UP <div className="lets-go-arrow">&gt;</div>
+          </div>
+          <div className="blue-navbar-right-subitem">LOG IN <div className="lets-go-arrow">&gt;</div> </div>
+          <div className="blue-navbar-right-subitem">ABOUT US <div className="lets-go-arrow">&gt;</div> </div>
         </div>
-      </div>
+      </div >
       <div>Hello! Welcome to the cleanly frontend!</div>
 
       {/* The space here, between the 'Hello! Welcome to...' 
