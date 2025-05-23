@@ -87,8 +87,13 @@
 /* CSS to handle the styling of the individual items*/
 .blue-navbar-right-subitem {
   margin-right: 100px;
-
 }
+
+.blue-navbar-right-subitem:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
 
 /* CSS to make the bottom banner a blue trapezoid. */
 #bottom-banner-triangle {

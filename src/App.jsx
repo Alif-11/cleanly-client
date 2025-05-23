@@ -22,7 +22,6 @@ function App() {
               console.log("You clicked the SIGN UP Button in the Blue Navbar");
             }
           }
-
             className="blue-navbar-right-subitem">
             {/* Need to add hover animations so it's clear the Navbar items are clickable. */}
             SIGN UP <div className="lets-go-arrow">&gt;</div>
