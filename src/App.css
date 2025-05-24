@@ -82,11 +82,15 @@
   display: flex;
   justify-content: space-between;
   font-weight: 650;
+  height: 100%;
 }
 
 /* CSS to handle the styling of the individual items*/
 .blue-navbar-right-subitem {
   margin-right: 100px;
+  height: 62px;
+  display: flex;
+  align-items: center;
 }
 
 .blue-navbar-right-subitem:hover {
