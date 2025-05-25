@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 #root {
   max-width: 100vw;
   text-align: center;
@@ -73,6 +75,9 @@
 #blue-navbar-left {
   margin-left: 300px;
   font-weight: 650;
+  height: 62px;
+  display: flex;
+  align-items: center;
 }
 
 /* CSS to handle the positioning of the container holding 
@@ -93,10 +98,7 @@
   align-items: center;
 }
 
-.blue-navbar-right-subitem:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-  cursor: pointer;
-}
+
 
 
 /* CSS to make the bottom banner a blue trapezoid. */
