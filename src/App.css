@@ -49,8 +49,6 @@
 #persistent-navbar-top {
   width: 100vw;
   height: 61px;
-  background-color: #FFFBFF;
-  color: #0118D8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,8 +59,6 @@
 /* CSS to make the navbar -  below the top, white navbar - blue . */
 #persistent-navbar-bottom {
   width: 100vw;
-  background-color: #0118D8;
-  color: #FFFBFF;
   height: 62px;
   margin-bottom: 15px;
   display: flex;
@@ -105,8 +101,7 @@
 #bottom-banner-triangle {
   width: 100px;
   height: 0;
-  background-color: #0118D8;
-  color: #FFFBFF;
+
   position: fixed;
   /* To position the triangle, it may be a good idea to get the rendered
    * rectangle's height, and use it as the value to bottom.
@@ -120,8 +115,7 @@
 #bottom-banner-rectangle {
   width: 100vw;
   height: 100px;
-  background-color: #0118D8;
-  color: #FFFBFF;
+
   position: fixed;
   bottom: 0;
 }

@@ -11,10 +11,10 @@ function App() {
   return (
     <>
       {/* persistent-navbar-top is the white navbar at the top of the screen. */}
-      <div id="persistent-navbar-top">Cleanly</div>
+      <div id="persistent-navbar-top" className="text-blue-400 bg-white">Cleanly</div>
       {/* persistent-navbar-bottom is the blue navbar right below persistent-navbar-top. 
           It contains the buttons for PATRON and RUNNER on the left, and ABOUT US on the right. */}
-      <div id="persistent-navbar-bottom">
+      <div id="persistent-navbar-bottom" className="bg-blue-400 text-white">
         <div id="blue-navbar-left" className="hover:cursor-pointer">CLEANLY LOGO</div>
         <div id="blue-navbar-right">
           <div onClick={
@@ -30,7 +30,7 @@ function App() {
           <div className="blue-navbar-right-subitem hover:text-blue-400 hover:bg-white hover:cursor-pointer">ABOUT US <div className="lets-go-arrow">&gt;</div> </div>
         </div>
       </div >
-      <div>Hello! Welcome to the cleanly frontend!</div>
+      <div className="text-blue-400">Hello! Welcome to the cleanly frontend!</div>
 
       {/* The space here, between the 'Hello! Welcome to...' 
         * and the '<div id="bottom-banner"...'
@@ -56,8 +56,8 @@ function App() {
         })
         console.log("You clicked the 'test button' on the Cleanly HomePage.");
       }}>Test button!</button>
-      <div id="bottom-banner-triangle"></div>
-      <div id="bottom-banner-rectangle">Cleanly & Cleanly &copy; 2025</div>
+      <div id="bottom-banner-triangle" className="bg-blue-400 text-white"></div>
+      <div id="bottom-banner-rectangle" className="bg-blue-400 text-white">Cleanly & Cleanly &copy; 2025</div>
     </>
   )
 }
