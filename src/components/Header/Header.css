@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* CSS to make the top most navbar white. */
+#persistent-navbar-top {
+  width: 100vw;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 120;
+  font-size: 32px;
+}
+
+/* CSS to make the navbar -  below the top, white navbar - blue . */
+#persistent-navbar-bottom {
+  width: 100vw;
+  height: 62px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CSS to handle the positioning of the container holding 
+   all elements of the left side of the blue navbar. */
+#blue-navbar-left {
+  margin-left: 300px;
+  font-weight: 650;
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+/* CSS to handle the positioning of the container holding 
+   all elements of the right side of the blue navbar. */
+#blue-navbar-right {
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 650;
+  height: 100%;
+}
+
+/* CSS to handle the styling of the individual items*/
+.blue-navbar-right-subitem {
+  margin-right: 100px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
