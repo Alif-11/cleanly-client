@@ -1,0 +1,22 @@
+/* CSS to make the bottom banner a blue trapezoid. */
+#bottom-banner-triangle {
+  width: 100px;
+  height: 0;
+
+  position: fixed;
+  /* To position the triangle, it may be a good idea to get the rendered
+   * rectangle's height, and use it as the value to bottom.
+   */
+  bottom: 100px;
+  border-bottom: 200px solid transparent;
+  border-left: 100vw solid;
+  border-right: 25px solid transparent;
+}
+
+#bottom-banner-rectangle {
+  width: 100vw;
+  height: 100px;
+
+  position: fixed;
+  bottom: 0;
+}

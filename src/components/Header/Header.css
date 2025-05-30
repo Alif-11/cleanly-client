@@ -48,3 +48,13 @@
   display: flex;
   align-items: center;
 }
+
+.lets-go-arrow {
+  display: inline;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+#header-wrapper {
+  position: fixed;
+}
