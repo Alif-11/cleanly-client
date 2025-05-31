@@ -56,5 +56,5 @@
 }
 
 #header-wrapper {
-  position: fixed;
+  position: sticky;
 }
