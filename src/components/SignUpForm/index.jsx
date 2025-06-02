@@ -7,6 +7,6 @@ export default function SignUpForm() {
   const [confirmPassword, setConfirmPassword] = useState('')
 
   return (<>
-    <div>Welcome!</div>
+    <div className="text-blue-400">Welcome! Here to sign you up!</div>
   </>);
 }
