@@ -5,7 +5,9 @@ import SignUpForm from "../../components/SignUpForm";
 export default function SignUp() {
   return (<>
     <Header />
-    <SignUpForm />
+    <div className="grid grid-cols-1 place-items-center">
+      <SignUpForm />
+    </div>
     <Footer />
   </>);
 }
